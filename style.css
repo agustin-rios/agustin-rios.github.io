@@ -1,0 +1,94 @@
+* { /* basic configuation to make everything normal */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /* width an height now include content, padding and border */
+}
+
+body {
+    background-color: #37474F;
+}
+
+header { /* nav bar distribution */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: #292929;
+}
+
+header a, li, button, div { /* basic configuration of styles */
+    text-decoration: none;
+    font-family: 'Monserrat', sans-serif;
+    color: #ececec;
+    text-transform: capitalize;
+}
+
+header .logo { /* toc detail  */
+    cursor: pointer;
+    margin-right: auto;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+header .search-bar {
+    margin-right: auto;
+    display: flex;
+}
+
+header .search-bar input {
+    border: none;
+    border-radius: 10px 0 0 10px;
+    height: 25px;
+    padding: 5px;
+    background-color: #ececec;
+    outline: none;
+}
+
+header .search-bar button {
+    background-color: #ececec;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    padding: 5px;
+    height: 25px;
+    cursor: pointer;
+    outline: none;
+}
+
+header .search-bar i {
+    background-color: #ececec;
+    color: black;
+}
+
+.nav-links { /* remove dots from list */
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a{
+    transition: 0.3s
+}
+
+.nav-links li a:hover{
+    color: #0088a9;
+}
+
+header #login {
+    padding: 9px 30px;
+}
+
+header a button {
+    background-color: #0088a9;
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header a button:hover {
+    background-color: #00657e;
+}
