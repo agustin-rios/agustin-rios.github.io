@@ -1,6 +1,4 @@
-const hello = () => {
-    console.log("hello world.");
-}
+
 
 const hello2 = () => {
     console.log("les presento esto.")
@@ -13,4 +11,10 @@ const hello3 = () => {
 const hello4 = () => {
     console.log("les presento este letscommit .")
     console.log("Hola grupo1")
+}
+
+
+const helloworld = () => {
+    console.log("hello world.");
+    console.log("yay capstone")
 }
