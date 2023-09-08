@@ -18,3 +18,8 @@ const helloworld = () => {
     console.log("hello world.");
     console.log("yay capstone")
 }
+
+const helloworld2 = () => {
+    console.log("hello world.");
+    console.log("yay capstone")
+}
