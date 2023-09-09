@@ -33,3 +33,8 @@ const holasabado = () => {
 const estafunction = (hola) => {
     console.log(hola);
 }
+
+
+const newHelloFuction = (args) => {
+    console.log("Hello World")
+}
