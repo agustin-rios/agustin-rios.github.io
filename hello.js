@@ -29,3 +29,7 @@ const holasabado = () => {
     console.log(1 + x);
     console.log("holaaaaaaaaaaaa");
 }
+
+const estafunction = (hola) => {
+    console.log(hola);
+}
