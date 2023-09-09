@@ -23,3 +23,9 @@ const helloworld2 = () => {
     console.log("hello world.");
     console.log("yay capstone")
 }
+
+const holasabado = () => {
+    x = 3;
+    console.log(1 + x);
+    console.log("holaaaaaaaaaaaa");
+}
