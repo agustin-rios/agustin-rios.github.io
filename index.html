@@ -1,26 +1,278 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi sitio web personal</title>
-  </head>
-  <style>
-    body {
-      height: 100vh;
-      margin: 0;
-      background-color: #37474F;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: sans-serif;
-    }
-    h1 {
-      margin: 0;
-    }
-  </style>
-  <body>
-    <h1>¡Hola, mi nombre es TU_NOMBRE!</h1>
-  </body>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agustín Ríos — Platform &amp; Software Engineer</title>
+  <meta name="description" content="Agustín Ríos — ingeniero de software en Santiago, Chile. Platform engineering, DevOps, backend en TypeScript y Python, identidad (Keycloak/OIDC) y tooling de IA.">
+  <link rel="canonical" href="https://agustin-rios.github.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://agustin-rios.github.io/">
+  <meta property="og:title" content="Agustín Ríos — Platform &amp; Software Engineer">
+  <meta property="og:description" content="Platform engineering, DevOps y backend TypeScript/Python desde Santiago, Chile.">
+  <meta property="og:image" content="https://agustin-rios.github.io/assets/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Agustín Ríos — platform engineering, devops, backend typescript. Santiago, Chile.">
+  <meta property="og:locale" content="es_CL">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="theme-color" content="#263238">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+
+  <link rel="preload" href="/assets/fonts/archivo-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/plexmono-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/plexmono-500-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Agustín Ríos",
+    "url": "https://agustin-rios.github.io/",
+    "jobTitle": "Software Engineer",
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Pontificia Universidad Católica de Chile" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Santiago", "addressCountry": "CL" },
+    "knowsAbout": ["Platform Engineering", "DevOps", "TypeScript", "Python", "Kubernetes", "Identity and Access Management"],
+    "sameAs": [
+      "https://github.com/agustin-rios",
+      "https://www.linkedin.com/in/agustinriosletelier/"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+  <header class="nav" id="top">
+    <a class="nav__wordmark" href="#top">agustín·ríos</a>
+    <nav class="nav__links" aria-label="Secciones">
+      <a href="#trabajo" data-spy="trabajo"><span class="folio">01</span> <span data-i18n="nav.work">trabajo</span></a>
+      <a href="#stack" data-spy="stack"><span class="folio">02</span> <span data-i18n="nav.stack">stack</span></a>
+      <a href="#formacion" data-spy="formacion"><span class="folio">03</span> <span data-i18n="nav.edu">formación</span></a>
+      <a href="#contacto" data-spy="contacto"><span class="folio">04</span> <span data-i18n="nav.contact">contacto</span></a>
+    </nav>
+    <button class="lang-toggle" id="lang-toggle" type="button" aria-label="ES — EN: switch to English">
+      <span class="lang-toggle__opt is-active" data-lang="es">ES</span><span class="lang-toggle__sep">—</span><span class="lang-toggle__opt" data-lang="en">EN</span>
+    </button>
+  </header>
+
+  <main id="main">
+    <!-- §01 HERO -->
+    <section class="hero" aria-label="Portada">
+      <div class="hero__text">
+        <p class="hero__folio folio">§00 · <span data-i18n="hero.folio">portada</span></p>
+        <h1 class="hero__name">Agustín<br>Ríos<span class="dot">.</span></h1>
+        <p class="hero__role mono">platform engineering — devops — backend typescript<span class="caret" aria-hidden="true"></span></p>
+        <p class="hero__intro" data-i18n="hero.intro">Construyo y opero plataformas: infraestructura cloud-native, APIs en TypeScript y Python, identidad y tooling para flujos con IA.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--primary" href="#trabajo" data-i18n="hero.cta1">Ver proyectos</a>
+          <a class="btn btn--ghost" href="#contacto" data-i18n="hero.cta2">Contacto</a>
+        </div>
+      </div>
+      <svg class="hero__diagram" viewBox="0 0 420 360" aria-hidden="true" focusable="false">
+        <g class="diagram__links">
+          <path d="M105 76v36"/>
+          <path d="M210 76v36"/>
+          <path d="M157 148v32"/>
+          <path d="M157 228v32"/>
+          <path d="M262 148h58v32"/>
+          <path d="M320 228v16h-60v16"/>
+        </g>
+        <g class="diagram__nodes">
+          <rect x="52" y="40" width="106" height="36" rx="5"/>
+          <rect x="157" y="40" width="106" height="36" rx="5"/>
+          <rect x="52" y="112" width="210" height="36" rx="5"/>
+          <rect x="52" y="180" width="210" height="48" rx="5"/>
+          <rect x="268" y="180" width="104" height="48" rx="5"/>
+          <rect x="120" y="260" width="180" height="36" rx="5" class="node--accent"/>
+        </g>
+        <g class="diagram__labels mono">
+          <text x="105" y="63" text-anchor="middle">api · ts</text>
+          <text x="210" y="63" text-anchor="middle">mcp · ai</text>
+          <text x="157" y="135" text-anchor="middle">keycloak / oidc</text>
+          <text x="157" y="200" text-anchor="middle">kubernetes</text>
+          <text x="157" y="218" text-anchor="middle">argocd · gitops</text>
+          <text x="320" y="200" text-anchor="middle">observa-</text>
+          <text x="320" y="218" text-anchor="middle">bilidad</text>
+          <text x="210" y="283" text-anchor="middle">terraform / opentofu</text>
+        </g>
+      </svg>
+    </section>
+
+    <!-- §02 PERFIL -->
+    <section class="perfil reveal" aria-label="Perfil">
+      <div class="perfil__lede">
+        <p data-i18n="perfil.lede">Me interesa el punto donde la infraestructura se encuentra con el producto: plataformas que se operan como producción —con GitOps, observabilidad y postmortems—, backends que aguantan tráfico real y sistemas de identidad que no estorban. Últimamente, también el tooling que conecta agentes de IA con sistemas reales.</p>
+      </div>
+      <aside class="perfil__meta mono" aria-label="Datos">
+        <div><span class="k">location:</span> <span class="v">Santiago, CL</span></div>
+        <div><span class="k">education:</span> <span class="v" data-i18n="perfil.edu">Ingeniería · PUC Chile</span></div>
+        <div><span class="k">focus:</span> <span class="v">platform engineering</span></div>
+        <div><span class="k">status:</span> <span class="v"><span class="status-dot status-dot--green" aria-hidden="true"></span> <span data-i18n="perfil.status">abierto a conversar</span></span></div>
+      </aside>
+    </section>
+
+    <!-- §03 TRABAJO SELECCIONADO -->
+    <section class="trabajo reveal" id="trabajo" aria-labelledby="trabajo-title">
+      <h2 id="trabajo-title"><span class="folio">§01</span> <span data-i18n="work.title">Trabajo seleccionado</span></h2>
+
+      <ol class="work-list">
+        <li class="work-row work-row--flagship">
+          <span class="work-row__num mono">01</span>
+          <div class="work-row__body">
+            <div class="work-row__head">
+              <h3 class="work-row__title">Platform Engineering Lab</h3>
+              <span class="badge badge--amber mono"><span class="status-dot status-dot--amber" aria-hidden="true"></span> <span data-i18n="work.lab.badge">status: en curso</span></span>
+            </div>
+            <p data-i18n="work.lab.desc">Laboratorio autodirigido para construir y operar una plataforma cloud-native multi-tenant simulada: Kubernetes, GitOps con ArgoCD, IaC con OpenTofu y observabilidad completa.</p>
+            <p class="work-row__extra" data-i18n="work.lab.extra">Pensado para operarse como producción: ADRs por decisión, postmortems de incidentes simulados, runbooks y CI con escaneo de secretos y validación de Terraform. Roadmap de 12 meses, en construcción pública.</p>
+            <p class="work-row__tags mono">k8s · argocd · opentofu · observability · chaos</p>
+          </div>
+          <div class="work-row__side mono">
+            <span class="work-row__year">2026</span>
+            <a class="work-row__link" href="https://github.com/agustin-rios/platform-engineering-lab" rel="noopener">repo ↗</a>
+          </div>
+        </li>
+
+        <li class="work-row">
+          <span class="work-row__num mono">02</span>
+          <div class="work-row__body">
+            <h3 class="work-row__title">Cururo</h3>
+            <p data-i18n="work.cururo.desc">CLI en Python que automatiza la revisión de código con la API de OpenAI, integrable en GitHub Actions y con resultados vía webhook. Publicada en PyPI, con Docker y release automatizado.</p>
+            <p class="work-row__tags mono">python · openai · pypi · github-actions</p>
+          </div>
+          <div class="work-row__side mono">
+            <span class="status-dot status-dot--green" aria-hidden="true"></span>
+            <span class="work-row__year">2024</span>
+            <a class="work-row__link" href="https://github.com/agustin-rios/Cururo" rel="noopener">repo ↗</a>
+          </div>
+        </li>
+
+        <li class="work-row">
+          <span class="work-row__num mono">03</span>
+          <div class="work-row__body">
+            <h3 class="work-row__title">AegisFlows</h3>
+            <p data-i18n="work.aegis.desc">Stack IAM autohospedado sobre Keycloak 26 y PostgreSQL: importación dinámica de realms, secretos OAuth inyectados vía Admin API (nunca en archivos), temas custom y ~40 targets de Make para operación.</p>
+            <p class="work-row__tags mono">keycloak · oauth2/oidc · docker · postgresql</p>
+          </div>
+          <div class="work-row__side mono">
+            <span class="status-dot status-dot--green" aria-hidden="true"></span>
+            <span class="work-row__year">2025</span>
+            <a class="work-row__link" href="https://github.com/agustin-rios/AegisFlows" rel="noopener">repo ↗</a>
+          </div>
+        </li>
+
+        <li class="work-row">
+          <span class="work-row__num mono">04</span>
+          <div class="work-row__body">
+            <h3 class="work-row__title">buda-spread-api</h3>
+            <p data-i18n="work.buda.desc">API REST en TypeScript y Express que calcula spreads de mercados cripto de Buda.com y gestiona alertas. Cliente HTTP tipado con openapi-typescript, tests de integración con Jest y Supertest, Docker y CI.</p>
+            <p class="work-row__tags mono">typescript · express · jest · docker</p>
+          </div>
+          <div class="work-row__side mono">
+            <span class="status-dot status-dot--green" aria-hidden="true"></span>
+            <span class="work-row__year">2024</span>
+            <a class="work-row__link" href="https://github.com/agustin-rios/buda-spread-api" rel="noopener">repo ↗</a>
+          </div>
+        </li>
+
+        <li class="work-row">
+          <span class="work-row__num mono">05</span>
+          <div class="work-row__body">
+            <h3 class="work-row__title">product-dashboard</h3>
+            <p data-i18n="work.dashboard.desc">Dashboard de productos con Next.js y React: route handlers como backend-for-frontend, arquitectura hexagonal ligera (puertos, dominio, adaptadores) y KPIs agregados sobre un catálogo paginado.</p>
+            <p class="work-row__tags mono">nextjs · react · typescript · tailwind</p>
+          </div>
+          <div class="work-row__side mono">
+            <span class="status-dot status-dot--green" aria-hidden="true"></span>
+            <span class="work-row__year">2026</span>
+            <a class="work-row__link" href="https://github.com/agustin-rios/product-dashboard" rel="noopener">repo ↗</a>
+          </div>
+        </li>
+
+        <li class="work-row">
+          <span class="work-row__num mono">06</span>
+          <div class="work-row__body">
+            <h3 class="work-row__title">investment_portfolio</h3>
+            <p data-i18n="work.invest.desc">API en Django y DRF para valorizar portafolios de inversión: carga precios y ponderaciones desde Excel y reconstruye el valor diario por activo con aritmética Decimal para precisión financiera.</p>
+            <p class="work-row__tags mono">django · drf · pandas · fintech</p>
+          </div>
+          <div class="work-row__side mono">
+            <span class="status-dot status-dot--green" aria-hidden="true"></span>
+            <span class="work-row__year">2025</span>
+            <a class="work-row__link" href="https://github.com/agustin-rios/investment_portfolio" rel="noopener">repo ↗</a>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- §04 STACK -->
+    <section class="stack reveal" id="stack" aria-labelledby="stack-title">
+      <h2 id="stack-title"><span class="folio">§02</span> Stack</h2>
+      <div class="stack-band">
+        <span class="stack-band__label mono">infra &amp; delivery</span>
+        <p class="stack-band__items">Docker · Kubernetes · Terraform / OpenTofu · ArgoCD · GitHub Actions · Linux · Make</p>
+      </div>
+      <div class="stack-band">
+        <span class="stack-band__label mono">backend &amp; data</span>
+        <p class="stack-band__items">TypeScript / Node.js · Python · Express · Django · PostgreSQL · Prisma · pandas</p>
+      </div>
+      <div class="stack-band">
+        <span class="stack-band__label mono">identity &amp; security</span>
+        <p class="stack-band__items">Keycloak · OAuth2 / OIDC · SSO · secrets management · gitleaks</p>
+      </div>
+      <div class="stack-band">
+        <span class="stack-band__label mono">ai tooling &amp; dx</span>
+        <p class="stack-band__items">MCP (Model Context Protocol) · OpenAI API · Vue · Next.js · Vite</p>
+      </div>
+    </section>
+
+    <!-- §05 FORMACIÓN -->
+    <section class="formacion reveal" id="formacion" aria-labelledby="formacion-title">
+      <h2 id="formacion-title"><span class="folio">§03</span> <span data-i18n="edu.title">Formación</span></h2>
+      <div class="edu-row">
+        <p class="edu-row__what" data-i18n="edu.degree">Ingeniería, especialidad en Computación — Pontificia Universidad Católica de Chile</p>
+        <span class="edu-row__where mono">santiago, cl</span>
+      </div>
+      <!--
+        TODO(Agustín): agrega aquí tu experiencia profesional desde tu CV/LinkedIn
+        (no pude leer LinkedIn de forma automática). Plantilla de fila:
+
+        <div class="edu-row">
+          <p class="edu-row__what">Cargo — Empresa<br><span class="edu-row__detail">Una línea con impacto cuantificado.</span></p>
+          <span class="edu-row__where mono">2024 — hoy</span>
+        </div>
+
+        Si agregas varias, duplica el bloque y considera renombrar el título de la
+        sección a "Trayectoria" (y su traducción "Experience" en js/main.js).
+      -->
+    </section>
+
+    <!-- §06 CONTACTO -->
+    <section class="contacto reveal" id="contacto" aria-labelledby="contacto-title">
+      <h2 id="contacto-title" class="contacto__headline"><span data-i18n="contact.title">Hablemos</span><span class="dot">.</span></h2>
+      <div class="contacto__email-wrap">
+        <a class="contacto__email" href="mailto:arios6@uc.cl">arios6@uc.cl</a>
+        <button class="copy-btn mono" id="copy-email" type="button" data-email="arios6@uc.cl">
+          <span data-i18n="contact.copy">copiar</span>
+        </button>
+        <span class="copy-feedback mono" id="copy-feedback" role="status" aria-live="polite"></span>
+      </div>
+      <p class="contacto__links mono">
+        <a href="https://github.com/agustin-rios" rel="noopener">github.com/agustin-rios ↗</a>
+        <a href="https://www.linkedin.com/in/agustinriosletelier/" rel="noopener">linkedin/agustinriosletelier ↗</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="colofon">
+    <p class="mono" data-i18n="colofon">Compuesto en Archivo e IBM Plex Mono. HTML, CSS y JS vanilla — sin frameworks, sin build step. exit 0 ✓</p>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
+</body>
 </html>
